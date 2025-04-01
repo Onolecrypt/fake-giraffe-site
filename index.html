@@ -80,6 +80,18 @@
             margin: 10px auto;
         }
         
+        .aside-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        
+        .aside-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        
         .footer-class {
             text-align: center;
             width: 100%;
@@ -115,18 +127,9 @@
 
     <div class="content">
         <main>
-            <h2 class="sev">Save Onole's Giraffes!</h2>
+            <h2>Save Onole's Giraffes!</h2>
             <h3>Wildlife Parks and Giraffe Conservation</h3>
-            <p><span id="aside-para">W</span>ildlife parks and reserves have played a crucial role in giraffe conservation efforts around the world.</p>
-            <p>These efforts include:</p>
-            <ul class="main-list">
-                <li>Habitat Protection: Wildlife parks work to protect and restore giraffe habitats.</li>
-                <li>Anti-Poaching Measures: Parks enforce strict rules to prevent illegal hunting.</li>
-                <li>Breeding Programs: Programs exist to help endangered giraffe subspecies.</li>
-                <li>Research and Monitoring: Studies on giraffe behavior, genetics, and health.</li>
-                <li>Community Engagement: Educating locals to support conservation efforts.</li>
-                <li>Translocation Projects: Moving giraffes to repopulate regions.</li>
-            </ul>
+            <p>Wildlife parks and reserves have played a crucial role in giraffe conservation efforts around the world.</p>
             <h3>Onole Park's Giraffe Conservation</h3>
             <p>Onole Park has emerged as a leader in giraffe conservation through its innovative approach...</p>
             <img class="giraffe-img" src="images/girrafe.jpg" alt="Onole's Giraffe">
@@ -134,14 +137,15 @@
         </main>
 
         <aside>
-            <p><span id="aside-para">E</span>fforts to save giraffes on Onole's Island focus on preserving their habitat...</p>
-            <p><span id="aside-para">T</span>hese initiatives include breeding programs, wildlife monitoring, and community education.</p>
-            <img class="giraffe-img" src="images/girrafe.jpg" alt="Onole's Giraffe">
-            <img class="giraffe-img" src="images/gitracker.jpeg" alt="Onole's Giraffe">
-            <img class="giraffe-img" src="images/poaching.jpeg" alt="Onole's Giraffe">
-            <img class="giraffe-img" src="images/com-giraffe.jpeg" alt="Onole's Giraffe">
-            <img class="giraffe-img" src="images/save-giraf.avif" alt="Onole's Giraffe">
-            <p>These images depict anti-poaching patrols, giraffe releases from breeding programs, GPS tracking for research, community education events, and translocation efforts.</p>
+            <p>Efforts to save giraffes on Onole's Island focus on preserving their habitat...</p>
+            <div class="aside-grid">
+                <img src="images/girrafe.jpg" alt="Onole's Giraffe">
+                <img src="images/gitracker.jpeg" alt="Onole's Giraffe">
+                <img src="images/poaching.jpeg" alt="Onole's Giraffe">
+                <img src="images/com-giraffe.jpeg" alt="Onole's Giraffe">
+                <img src="images/save-giraf.avif" alt="Onole's Giraffe">
+                <img src="images/girrafes2.jpeg" alt="Onole's Giraffe">
+            </div>
         </aside>
     </div>
 
