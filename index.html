@@ -1,286 +1,158 @@
 <!DOCTYPE html>
-<html prefix="og:https//ogp.me/ns#">
+<html prefix="og: http://ogp.me/ns#">
 <head>
-<title>onole giraffe site</title>
-<meta charset="UTF-8">
-<meta http-equiv="refresh" content="5670007">
-<meta property="og:description" content="this is a simple developer test  site">
-<meta property="og:title" content="nav-test site">
-<meta property="og:image" content="url">
-<meta property="og:url" content="url">
-<style>
+    <title>Onole Giraffe Site</title>
+    <meta charset="UTF-8">
+    <meta property="og:description" content="This is a simple developer test site">
+    <meta property="og:title" content="Nav-Test Site">
+    <meta property="og:image" content="images/giraffe.jpg">
+    <meta property="og:url" content="https://example.com">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
 
-header{
+        .container {
+            display: flex;
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
 
-/*background-color: rgba(181, 172, 201, 0.762);
-background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);*/
-background: #a7b99e; 
-padding:10px;
-padding-top:1px;
-border-radius:3px;
-  bottom: 0;
-  width: 103;
-}
-
-h1{
-color:#fff;
-display:inline-block;
-position:absolute;
-top:15px;
-left:85px;
-}
-
-nav ul li{
-list-style-type:none;
-background-color:rgba(181, 172, 201, 0.762);
-color: #fff;
-display:flex;
-display:inline-block;
-font-weight:bold;
-padding:10px;
-cursor:pointer;
-border-radius:3px;
-margin-bottom: 8px;
-}
-
-nav{
-
-/*background-color:rgba(58, 25, 128, 0.877);*
-background: linear-gradient(to left, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);*/
-background-color: #535a3b; 
-position:relative;
-width:100%;
-text-align:right;
-
-}
-
-
-ul{
-display:inline-block;
-margin:5px;
-}
-
-
-
-#giraffe{
-width:45px;
-height:45px;
-display:inline-block;
-margin-top:20px;
-border-radius: 25px;
-
-}
-
-#giraffe2{
-width:250px;
-height:239px;
-display:inline-block;
-margin-top:2px;
-margin-left: 10px;
-margin-bottom:5px ;
-
-}
-
-
-main{
-
-  
-margin-top:3px;
-margin-right: 4px;
-padding: 5px;
-width:80%;
-height:100%;
-display:inline-block;
-background-repeat: no-repeat;
-background-size: contain;
-/*background-color: #fff;*/
-background: #a7b99e; 
-border: #a7b99e;
-}
-
-aside{
-background-color: #a7b99e; 
-color: #000;
-width:18.7%;
-height: 60.4em;
-display:inline-block;
-position:absolute;
-margin-top:3px;
-
-
-}
-
-h2{
-margin-left:10px;
-color:rgb(184, 246, 171);
-background-color: rgba(181, 172, 201, 0.762);
-display: inline-block;
-padding: 10px 20px 10px 20px;
-border-radius: 20px;
-
-}
-.sev:hover{
-  background-color: rgba(58, 25, 128, 0.877);
-}
-
-
-#aside-para{
-  font-size: 25px;
-
-}
-
-p,h3{
-  margin-left: 10px;
-}
-
-#giraffe3{
-
-  width: 120px;
-  height:95px;
-  margin-left: 10px;
-  margin-right: 5px;
-}
-
-.main-list li{
-
- color:#000;
-  
-}
-
-.lista{
-  /*background-color:rgba(58, 25, 128, 0.877);*/
-  background: linear-gradient(to left, rgb(182, 244, 146), rgb(51, 139, 147));
-  border-radius: 6px;
-}
-
-
-.futer-clas {
- display: block;
- /*background-color:rgba(58, 25, 128, 0.877);
- background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));*/
-background: #a7b99e; 
- /*border: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));*/
-  border: #a7b99e;
-  color: #000;
-  text-align: center;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 1px;
-}
-
-#futer{
-  text-align: center;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-
- 
-}
-
-
-
-
-#futer, ul ,li,a{
-  color: #000;
-  margin-left: 8px;
-  margin-top: 10px;
-  margin-right: 8px;
-  padding: unset;
-text-decoration: none;
-}
-
-
-</style>
+        header {
+            background: #a7b99e;
+            padding: 10px;
+            border-radius: 3px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #fff;
+            display: inline-block;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        nav ul li {
+            background-color: rgba(181, 172, 201, 0.762);
+            color: #fff;
+            font-weight: bold;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 3px;
+            margin: 0 8px;
+        }
+        
+        .content {
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+        }
+        
+        main {
+            flex: 3;
+            padding: 20px;
+            background: #a7b99e;
+            min-height: 100vh;
+        }
+        
+        aside {
+            flex: 1;
+            background-color: #a7b99e;
+            color: #000;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .giraffe-img {
+            width: 100%;
+            max-width: 250px;
+            display: block;
+            margin: 10px auto;
+        }
+        
+        .footer-class {
+            text-align: center;
+            width: 100%;
+            padding: 10px;
+            background: #a7b99e;
+            margin-top: 20px;
+        }
+        
+        #footer ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+        
+        #footer ul li {
+            margin: 0 8px;
+        }
+    </style>
 </head>
 <body>
-<div>
-<header >
-  <img id="giraffe" src="images/girraferound.jpg" alt="onole's giraffe">
-  <h1>Onole's  giraffe site</h1>
+    <header>
+        <img id="giraffe-logo" src="images/girraferound.jpg" alt="Onole's Giraffe" width="45" height="45">
+        <h1>Onole's Giraffe Site</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<nav>
-  
-  
-<ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">About</a></li>
-<li><a href="#">Contact</a></li>
-</ul>
-</nav>
-</header>
-</div>
+    <div class="content">
+        <main>
+            <h2 class="sev">Save Onole's Giraffes!</h2>
+            <h3>Wildlife Parks and Giraffe Conservation</h3>
+            <p><span id="aside-para">W</span>ildlife parks and reserves have played a crucial role in giraffe conservation efforts around the world.</p>
+            <p>These efforts include:</p>
+            <ul class="main-list">
+                <li>Habitat Protection: Wildlife parks work to protect and restore giraffe habitats.</li>
+                <li>Anti-Poaching Measures: Parks enforce strict rules to prevent illegal hunting.</li>
+                <li>Breeding Programs: Programs exist to help endangered giraffe subspecies.</li>
+                <li>Research and Monitoring: Studies on giraffe behavior, genetics, and health.</li>
+                <li>Community Engagement: Educating locals to support conservation efforts.</li>
+                <li>Translocation Projects: Moving giraffes to repopulate regions.</li>
+            </ul>
+            <h3>Onole Park's Giraffe Conservation</h3>
+            <p>Onole Park has emerged as a leader in giraffe conservation through its innovative approach...</p>
+            <img class="giraffe-img" src="images/girrafe.jpg" alt="Onole's Giraffe">
+            <img class="giraffe-img" src="images/girrafes2.jpeg" alt="Onole Giraffe">
+        </main>
 
-  <main>
-    <h2 class="sev">Save Onole's Giraffes!</h2>
-    <h3>Wildlife Parks and Giraffe Conservation</h3>
+        <aside>
+            <p><span id="aside-para">E</span>fforts to save giraffes on Onole's Island focus on preserving their habitat...</p>
+            <p><span id="aside-para">T</span>hese initiatives include breeding programs, wildlife monitoring, and community education.</p>
+            <img class="giraffe-img" src="images/girrafe.jpg" alt="Onole's Giraffe">
+            <img class="giraffe-img" src="images/gitracker.jpeg" alt="Onole's Giraffe">
+            <img class="giraffe-img" src="images/poaching.jpeg" alt="Onole's Giraffe">
+            <img class="giraffe-img" src="images/com-giraffe.jpeg" alt="Onole's Giraffe">
+            <img class="giraffe-img" src="images/save-giraf.avif" alt="Onole's Giraffe">
+            <p>These images depict anti-poaching patrols, giraffe releases from breeding programs, GPS tracking for research, community education events, and translocation efforts.</p>
+        </aside>
+    </div>
 
-<p><span id="aside-para">W</span>ildlife parks and reserves have played a crucial role in giraffe conservation efforts around the world.
-  
-</p>
-<p>These efforts include: </p>
-<div class="lista">
-<ul class="main-list">
-  <li>
-Habitat Protection: Wildlife parks have worked to protect and restore habitats where giraffes live, ensuring they have access to the food and water they need to thrive.
-  </li>
-<li>
-Anti-Poaching Measures: Many parks have implemented strict anti-poaching measures to protect giraffes from illegal hunting, which has been a significant threat to their populations.
-</li>
-<li>
-Breeding Programs: Some parks have established breeding programs to help increase giraffe populations, especially for subspecies that are endangered.
-</li>
-<li>
-Research and Monitoring: Parks often conduct research on giraffe behavior, genetics, and health, which helps inform conservation strategies. Monitoring giraffe populations helps track their numbers and understand the challenges they face.
-</li>
-<li>
-Community Engagement: Engaging local communities in conservation efforts has been vital. Many parks educate and involve local people in protecting giraffes, which helps build support for conservation.
-</li>
-<li>
-Translocation Projects: Some parks have been involved in translocating giraffes to areas where they have been locally extinct, helping to re-establish populations in those regions.
-</li>
-</ul>
-</div>
-<h3 >Onole Park's Giraffe Conservation</h3>
-<p>
-Onole Park has emerged as a leader in giraffe conservation through its innovative and community-focused approach. Nestled on the edge of the desert, the park has transformed into a sanctuary for the endangered Rothschild’s giraffe. Through its "Adopt-a-Giraffe" program, the park has raised significant funds to support habitat restoration and anti-poaching efforts. Visitors are encouraged to participate in guided tours that educate them about the giraffes' plight, fostering a deep connection between the public and these gentle giants.</p>
-<p> The park also collaborates with international conservation organizations, sharing research and best practices to enhance global giraffe conservation efforts. With its lush, carefully managed environment, Saadiyat Park has not only provided a safe haven for giraffes but has also inspired a new generation of conservationists to continue the fight for these magnificent creatures.</p>
-  <img id="giraffe2" src="images/girrafe.jpg" alt="onole's giraffe"  >
-  <img id="giraffe2" src="images/girrafes2.jpeg" alt="Onole giraffe"  >
-  
-  </main><aside>
-
-<p><span id="aside-para">E</span>fforts to save giraffes on Onole's Island focus on preserving their habitat and ensuring their long-term survival. Conservationists are implementing programs to protect these majestic creatures from poaching and habitat loss.
-
-  <span id="aside-para">T</span>hese initiatives include breeding programs, wildlife monitoring, and community education to raise awareness. By safeguarding the giraffes' environment, we can help secure their future on the island.</p>
-<img id="giraffe2" src="images/girrafe.jpg" alt="onole's giraffe"  >
-
-<img id="giraffe3" src="images/gitracker.jpeg" 
-alt="onole's giraffe" style="margin-left: 10px;" >
-<img id="giraffe3" src="images/poaching.jpeg" 
-alt="onole's giraffe" style="margin-left: auto;" >
-<img id="giraffe3" src="images/com-giraffe.jpeg" 
-alt="onole's giraffe" style="margin-left: 10px;" >
-<img id="giraffe3" src="images/save-giraf.avif" 
-alt="onole's giraffe" style="margin-left: auto;" >
-
-<p>These images depict anti-poaching patrols, giraffe releases from breeding programs, GPS tracking for research, community education events, and translocation efforts.</p>
-</aside>
-<div class="futer-clas">
-<footer>
-
-  <ul id="futer">
-    <li class="footer7"><a href="#">Discord|</a></li>
-    <li class="footer7"><a href="#">Facebook|</a></li>
-    <li class="footer7"><a href="#">Youtube|</a></li>
-    <li class="footer7"><a href="#">X</a></li>
-  </ul>
-  <p>©All Rights Reserved.Onole's Giraffe Site</p>
-</footer>
-</div>
-
+    <footer class="footer-class" id="footer">
+        <ul>
+            <li><a href="#">Discord</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">X</a></li>
+        </ul>
+        <p>© All Rights Reserved. Onole's Giraffe Site</p>
+    </footer>
 </body>
 </html>
-
